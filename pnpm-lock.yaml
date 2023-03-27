@@ -56,7 +56,7 @@ specifiers:
   prettier: ^2.8.6
   prettier-plugin-tailwindcss: ^0.2.5
   react: 18.2.0
-  react-dev-inspector: ^1.8.4
+  react-dev-inspector: https://github.com/IvanLisz/react-dev-inspector#add-prepare
   react-dom: 18.2.0
   sharp: ^0.31.3
   superjson: 1.12.2
@@ -130,7 +130,7 @@ devDependencies:
   postcss: 8.4.21
   prettier: 2.8.7
   prettier-plugin-tailwindcss: 0.2.5_prettier@2.8.7
-  react-dev-inspector: 1.8.4_m2buwt4aurdom7izueoze32r4i
+  react-dev-inspector: github.com/IvanLisz/react-dev-inspector/cd79f4b6461b7b218818aaaa11dd5b59575c3af5_m2buwt4aurdom7izueoze32r4i
   tailwindcss: 3.2.7_postcss@8.4.21
   typescript: 5.0.2
 
@@ -4145,30 +4145,6 @@ packages:
       strip-json-comments: 2.0.1
     dev: false
 
-  /react-dev-inspector/1.8.4_m2buwt4aurdom7izueoze32r4i:
-    resolution: {integrity: sha512-+MpF43RHTKjkilQ4TgUfSgpVlJFKpL4uPc/0FBJAMNPICYxw27q81++AcBIThfxFmBgsFbMj3EKZwkaPZ43V7w==}
-    engines: {node: '>=12.0.0'}
-    peerDependencies:
-      react: '>=16.8.0'
-    dependencies:
-      '@babel/core': 7.21.3
-      '@babel/generator': 7.21.3
-      '@babel/parser': 7.21.3
-      '@babel/traverse': 7.21.3
-      '@babel/types': 7.21.3
-      hotkeys-js: 3.10.1
-      loader-utils: 2.0.4
-      querystring: 0.2.1
-      react: 18.2.0
-      react-dev-utils: 12.0.1_j4766f7ecgqbon3u7zlxn5zszu
-    transitivePeerDependencies:
-      - eslint
-      - supports-color
-      - typescript
-      - vue-template-compiler
-      - webpack
-    dev: true
-
   /react-dev-utils/12.0.1_j4766f7ecgqbon3u7zlxn5zszu:
     resolution: {integrity: sha512-84Ivxmr17KjUupyqzFode6xKhjwuEJDROWKJy/BthkL7Wn6NJ8h4WE6k/exAv6ImS+0oZLRRW5j/aINMHyeGeQ==}
     engines: {node: '>=14'}
@@ -4944,3 +4920,32 @@ packages:
   /zod/3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
     dev: false
+
+  github.com/IvanLisz/react-dev-inspector/cd79f4b6461b7b218818aaaa11dd5b59575c3af5_m2buwt4aurdom7izueoze32r4i:
+    resolution: {tarball: https://codeload.github.com/IvanLisz/react-dev-inspector/tar.gz/cd79f4b6461b7b218818aaaa11dd5b59575c3af5}
+    id: github.com/IvanLisz/react-dev-inspector/cd79f4b6461b7b218818aaaa11dd5b59575c3af5
+    name: react-dev-inspector
+    version: 1.8.4
+    engines: {node: '>=12.0.0'}
+    prepare: true
+    requiresBuild: true
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      '@babel/core': 7.21.3
+      '@babel/generator': 7.21.3
+      '@babel/parser': 7.21.3
+      '@babel/traverse': 7.21.3
+      '@babel/types': 7.21.3
+      hotkeys-js: 3.10.1
+      loader-utils: 2.0.4
+      querystring: 0.2.1
+      react: 18.2.0
+      react-dev-utils: 12.0.1_j4766f7ecgqbon3u7zlxn5zszu
+    transitivePeerDependencies:
+      - eslint
+      - supports-color
+      - typescript
+      - vue-template-compiler
+      - webpack
+    dev: true
