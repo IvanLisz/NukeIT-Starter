@@ -7,20 +7,26 @@ import "~/styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
 
+  if (typeof window !== 'undefined') {
+    window.onmessage = function (e) {
+      if (e.data == 'toggleInspector') {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-explicit-any
+        (window as Record<string, any>).__REACT_DEV_INSPECTOR_TOGGLE__();
+      }
+    };
+  }
+
   return (
     <>
       <Component {...pageProps} />;
       <Inspector
-        // props see docs:
-        // https://github.com/zthxxx/react-dev-inspector#inspector-component-props
         keys={[]}
-        disableLaunchEditor={false}
-
+        disableLaunchEditor={true}
         onClickElement={({ codeInfo }: InspectParams) => {
           if (!codeInfo?.absolutePath) return
           const { absolutePath } = codeInfo
           if (window) {
-            window.top?.postMessage("openFile", absolutePath);
+            window.top?.postMessage({ type: "openFile", value: absolutePath }, "*");
           }
         }}
       />
