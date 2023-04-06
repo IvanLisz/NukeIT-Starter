@@ -9,7 +9,7 @@ import OnboardingCard from "./OnboardingCard";
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
-  const title = "Starter App";
+  const title = "Another branch";
 
   return (
     <>
@@ -18,10 +18,10 @@ const Home: NextPage = () => {
         <meta name="description" content={title} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#6d2b02] to-[#2c1515]">
+      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#02426d] to-[#24152c]">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <Title>
-            Starter App
+            Another branch
           </Title>
 
           <div>
