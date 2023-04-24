@@ -1,10 +1,11 @@
-"use client"
+import { cn } from "./lib/utils"
 
 interface ITitle {
-    children: string
+    className: string;
+    children: string;
 }
-const Title = ({ children }: ITitle) => (
-    <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
+const Title = ({ className, children }: ITitle) => (
+    <h1 className={cn("text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]", className)}>
         {children}
     </h1>
 )
