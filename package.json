@@ -6,7 +6,9 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@next/font": "^13.1.6",
@@ -44,7 +46,7 @@
     "@trpc/react-query": "^10.18.0",
     "@trpc/server": "^10.18.0",
     "@vercel/analytics": "^0.1.6",
-    "class-variance-authority": "^0.4.0",
+    "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
     "cmdk": "^0.1.21",
     "lucide-react": "0.105.0-alpha.4",
@@ -59,6 +61,13 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.14",
+    "@storybook/addon-interactions": "^7.0.14",
+    "@storybook/addon-links": "^7.0.14",
+    "@storybook/blocks": "^7.0.14",
+    "@storybook/nextjs": "^7.0.14",
+    "@storybook/react": "^7.0.14",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@types/eslint": "^8.21.3",
     "@types/node": "^18.15.5",
     "@types/prettier": "^2.7.2",
@@ -69,10 +78,12 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.36.0",
     "eslint-config-next": "^13.2.4",
+    "eslint-plugin-storybook": "^0.6.12",
+    "nukeit-react-inspector": "^1.8.4",
     "postcss": "^8.4.21",
     "prettier": "^2.8.6",
     "prettier-plugin-tailwindcss": "^0.2.5",
-    "nukeit-react-inspector": "^1.8.4",
+    "storybook": "^7.0.14",
     "tailwindcss": "^3.2.7",
     "typescript": "^5.0.2"
   },
